@@ -14,6 +14,12 @@ module.exports = {
       },
       boxShadow: {
         'btn-dice': '0px 0 15px 5px rgb(0 0 0 / 0.1)'
+      },
+      fontFamily: {
+        'sans': 'Manrope, sans-serif',
+      },
+      fontSize: {
+        'advice': '28px'
       }
     },
   },

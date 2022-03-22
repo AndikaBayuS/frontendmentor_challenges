@@ -7,7 +7,7 @@
         <div class="">
           <p class="text-neon-green">Advice #{{ advices.id }}</p>
           <p
-            class="my-5 text-[28px] font-extrabold text-light-cyan duration-300 ease-in-out"
+            class="my-5 text-advice font-extrabold text-light-cyan duration-300 ease-in-out"
           >
             "{{ advices.advice }}"
           </p>
@@ -57,7 +57,11 @@
 import { ref } from "vue";
 export default {
   setup() {
-    let advices = ref({});
+    let advices = ref({
+      id: 0,
+      advice:
+        "Loading Advice",
+    });
     let loading = ref(false);
 
     return {
